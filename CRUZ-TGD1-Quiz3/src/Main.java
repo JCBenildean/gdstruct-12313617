@@ -74,6 +74,7 @@ public class Main
                 gamesStarted++;
             }
 
+            //Adds Players to queue based on range of 1 - 7
             System.out.println("\n\nIncoming Players: " + randPlayersEnqueued);
 
             for (int i = 0; i < randPlayersEnqueued; i++)
@@ -85,8 +86,7 @@ public class Main
             System.out.println("Added Player's in Queue: ");
             players.printQueue();
 
-
-
+            //End code condition, detects if there are 10 Games live
             if (gamesStarted == 10)
             {
                 System.out.println("\n\nALL AVAILABLE GAMES ARE FULL");
